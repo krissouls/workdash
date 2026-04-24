@@ -81,6 +81,7 @@ nav a {
     color: whitesmoke;
     cursor: pointer;
     border-radius: 999px;
+    align-items: center;
 }
 
 .section {
@@ -211,6 +212,7 @@ a:hover {
 
     .btn {
         width: 60%;
+        margin-bottom: 15px;
         text-align: center;
     }
 }
