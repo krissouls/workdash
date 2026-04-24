@@ -6,15 +6,6 @@ body {
     font-family: -apple-system, BlinkMacSystemFont, sans-serif;
 }
 
-header {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 24px 60px;
-    background: white;
-    border-bottom: 1px solid #eee;
-}
-
 header h1 {
     font-size: 20px;
 }
@@ -37,7 +28,12 @@ header h1 {
     z-index: 1000;
 }
 
-.nav a {
+nav {
+    display: flex !important;
+    align-items: center;
+}
+
+nav a {
     margin-left: 30px;
     text-decoration: none;
     color: #111;
@@ -133,6 +129,8 @@ a:hover {
 
     .menu-toggle {
         display: block;
+        font-size: 24px;
+        cursor: pointer;
     }
 
     .navbar {
@@ -144,7 +142,7 @@ a:hover {
     nav {
         display: none;
         flex-direction: column;
-        width: 100;
+        width: 100%;
         margin-top: 10px;
     }
 
@@ -192,7 +190,7 @@ a:hover {
     }
 
     .btn {
-        width: 30%;
+        width: 100%;
         text-align: center;
     }
 }
@@ -201,5 +199,7 @@ a:hover {
 .menu-toggle {
     display: none;
     font-size: 24px;
+    cursor: pointer;
+}
     cursor: pointer;
 }
