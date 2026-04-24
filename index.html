@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>WorkDash</title>
+        <link rel="stylesheet" href="style.css">
+    </head>
+    <body>
+
+        <header class="navbar">
+            <div class="logo">WorkDash</div>
+
+            <!-- Hamburger -->
+            <div class="menu-toggle" onclick="toggleMenu()">
+                ☰
+            </div>
+
+            <nav>
+                <a href="#business">Businesses</a>
+                <a href="#workers">Workers</a>
+                <a href="#gigs">Gigs</a>
+                <a href="#contact">Contact</a>
+            </nav>
+
+            <button class="nav-btn">Get Started</button>
+        </header>
+
+        <section class="hero">
+            <h2>Find Work. Hire Fast.</h2>
+            <p>Connecting businesses with reliable on-demand workers.</p>
+            <button class="btn" onclick="handleClick()">Get Started</button>
+        </section>
+
+        <section class="section" id="business">
+            <h2>For Businesses</h2>
+            <div class="list">
+                <div class="item">
+                    <h3>Post Jobs</h3>
+                    <p>Quickly post gigs and find workers instantly.</p>
+                </div>
+                <div class="item">
+                    <h3>Verified Workers</h3>
+                    <p>Access a pool of reliable and trained staff.</p>
+                </div>
+            </div>
+        </section>
+
+        <section class="section" id="workers">
+            <h2>For Workers</h2>
+            <div class="list">
+                <div class="item">
+                    <h3>Flexible Work</h3>
+                    <p>Choose gigs that fit your schedule.</p>
+                </div>
+                <div class="item">
+                    <h3>Easy Apply</h3>
+                    <p>Apply to jobs with one click</p>
+                </div>
+                <div class="item">
+                    <h3>Earn More</h3>
+                    <p>Get paid quickly for your work.</p>
+                </div>
+            </div>
+        </section>
+
+        <section class="section" id="gigs">
+            <h2>Popular Gigs</h2>
+            <div class="list">
+                <div class="item">
+                    <h3>Event Staff</h3>
+                    <p>Concerts, weddings, corporate events</p>
+                </div>
+                <div class="item">
+                    <h3>Warehouse Helpers</h3>
+                    <p>Packing, loading, sorting</p>
+                </div>
+                <div class="item">
+                    <h3>Promoters</h3>
+                    <p>Brand promotion and marketing</p>
+                </div>
+            </div>
+        </section>
+
+        <button class="btn" onclick="openform()">I'm a Worker</button>
+        
+        <button class="btn" onclick="openform()">I'm a Business</button>
+
+        <section class="section" id="contact">
+            <h2>Contact Us</h2>
+
+            <div class="list">
+                <div class="item">
+                    <h3>Get in touch</h3>
+                    <p>Need workers or looking for gigs? Reach out to us directly</p>
+                </div>
+
+                <div class="item">
+                    <h3>WhatsApp</h3>
+                    <p>
+                        <a href="https://wa.me/919076483170" target="_blank">
+                            Message us on Whatsapp
+                        </a>
+                    </p>
+                </div>
+
+                <div class="item">
+                    <h3>Email</h3>
+                    <p>knsolanki011@gmail.com</p>
+                </div>
+            </div>
+        </section>
+
+        <button class="btn" onclick="openWhatsApp()">Chat on WhatsApp</button>
+
+        <footer>
+            <p>© 2026 WorkDash. All rights reserved.</p>
+        </footer>
+
+        <script src="script.js"></script>
+    </body>
+</html>
