@@ -15,6 +15,13 @@ header h1 {
     font-size: 18px;
 }
 
+/* Hide hamburger on desktop */
+.menu-toggle {
+    display: none;
+    font-size: 24px;
+    cursor: pointer;
+}
+
 .navbar {
     display: flex;
     justify-content: space-between;
@@ -193,13 +200,6 @@ a:hover {
         width: 100%;
         text-align: center;
     }
-}
-
-/* Hide hamburger on desktop */
-.menu-toggle {
-    display: none;
-    font-size: 24px;
-    cursor: pointer;
 }
     cursor: pointer;
 }
