@@ -36,7 +36,7 @@ header h1 {
 }
 
 nav {
-    display: flex !important;
+    display: flex;
     align-items: center;
 }
 
@@ -138,11 +138,13 @@ a:hover {
         display: block;
         font-size: 24px;
         cursor: pointer;
+        align-self: flex-end;
     }
 
     .navbar {
-        flex-direction: column;
-        align-items: flex-start;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
         padding: 15px 20px;
     }
 
@@ -155,6 +157,7 @@ a:hover {
 
     nav a {
         display: block;
+        text-align: left;
         margin: 10px 0;
         padding: 10px 0;
     }
@@ -164,6 +167,7 @@ a:hover {
     }
 
     .nav-btn {
+        display: none;
         margin-top: 10px;
     }
 
@@ -200,6 +204,4 @@ a:hover {
         width: 100%;
         text-align: center;
     }
-}
-    cursor: pointer;
 }
