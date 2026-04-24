@@ -11,8 +11,17 @@ header h1 {
 }
 
 .logo {
+    display: flex;
+    align-items: center;
     font-weight: 600;
     font-size: 18px;
+}
+
+.logo-img {
+    width: 28px;
+    height: auto;
+    margin-right: 8px;
+    margin-top: 2px;
 }
 
 /* Hide hamburger on desktop */
