@@ -154,6 +154,13 @@ a:hover {
         cursor: pointer;
         align-self: flex-end;
         margin-bottom: 5px;
+        margin-left: auto;
+    }
+
+    .logo {
+        position: absolute;
+        left: 50%;
+        transform: translateX(-50%);
     }
 
     .navbar {
