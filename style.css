@@ -142,21 +142,30 @@ a:hover {
     }
 
     .navbar {
+        display: flex;
         flex-direction: row;
         justify-content: space-between;
         align-items: center;
         padding: 15px 20px;
+        position: relative;
     }
 
     nav {
+        position: absolute;
+        top: 100%;
+        left: 0;
+        width: 100%;
+        background: white;
         display: none;
         flex-direction: column;
-        width: 100%;
+        padding: 10px 20px;
+        border-bottom: 1px solid #eee;
         margin-top: 10px;
+        box-shadow: 0 10px 20px rgba(0,0,0,0.05);
     }
 
     nav a {
-        display: block;
+        display: flex;
         text-align: left;
         margin: 10px 0;
         padding: 10px 0;
