@@ -81,7 +81,6 @@ nav a {
     color: whitesmoke;
     cursor: pointer;
     border-radius: 999px;
-    align-items: center;
 }
 
 .section {
@@ -130,6 +129,11 @@ a {
 
 a:hover {
     opacity:0.6;
+}
+
+.whatsapp-container {
+    display: flex;
+    justify-content: center;
 }
 
 /* Mobile responsive */
@@ -213,6 +217,17 @@ a:hover {
     .btn {
         width: 60%;
         margin-bottom: 15px;
+        text-align: center;
+    }
+
+    .whatsapp-container {
+        display: flex;
+        justify-content: center;
+        padding: 0 20px;
+    }
+
+    .whatsapp-container .btn {
+        width: 60%;
         text-align: center;
     }
 }
