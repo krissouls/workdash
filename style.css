@@ -1,9 +1,60 @@
 * { margin:0; padding:0; box-sizing: border-box; }
 
 body {
-    background-color: #ffffff;
-    color: #111;
     font-family: -apple-system, BlinkMacSystemFont, sans-serif;
+    margin: 0;
+    min-height: 100vh;
+    color: white;
+
+    background: linear-gradient(
+        -45deg,
+        #000000,
+        #111827,
+        #3533cd,
+        #000000
+    );
+
+    background-size: 400% 400%;
+
+    animation: gradientMove 15s ease infinite;
+
+    background-attachment: fixed;
+}
+
+@keyframes gradientMove {
+  0% {
+    background-position: 0% 50%;
+  }
+
+  50% {
+    background-position: 100% 50%;
+  }
+
+  100% {
+    background-position: 0% 50%;
+  }
+}
+
+body::before {
+  content: "";
+  position: fixed;
+  inset: 0;
+
+  background:
+    radial-gradient(circle at top left, rgba(0,255,200,0.15), transparent 30%),
+    radial-gradient(circle at bottom right, rgba(120,100,255,0.15), transparent 30%);
+
+  filter: blur(60px);
+
+  z-index: -1;
+}
+
+.gradient-text {
+  background: linear-gradient(90deg, #5ce1e6, #4d79ff);
+  background-clip: text;
+  -webkit-background-clip: text;
+  color: transparent;
+  -webkit-text-fill-color: transparent;
 }
 
 header h1 {
@@ -39,7 +90,8 @@ header h1 {
     flex-direction: row;
     position: sticky;
     top: 0;
-    background: white;
+    background: rgba(255,255,255,0.05);
+    backdrop-filter: blur(12px);
     border-bottom: 1px solid #eee;
     z-index: 1000;
 }
@@ -61,14 +113,14 @@ nav {
 nav a {
     margin-left: 30px;
     text-decoration: none;
-    color: #111;
+    color: white;
     font-size: 14px;
 }
 
 .nav-btn {
     padding: 10px 20px;
-    background: black;
-    color: white;
+    background: white;
+    color: #3533cd;
     border-radius: 999px;
     border: none;
     cursor: pointer;
@@ -87,16 +139,16 @@ nav a {
 }
 
 .hero p { 
-    color: #555;
+    color: rgba(255,255,255,0.72);
     margin-bottom: 30px;
     font-size: 18px;
 }
 
 .btn {
     padding: 14px 28px;
-    background: black;
+    background:white;
     border:none;
-    color: whitesmoke;
+    color: white;
     cursor: pointer;
     border-radius: 999px;
 }
@@ -122,7 +174,7 @@ nav a {
 }
 
 .item p {
-    color: #666;
+    color: rgba(255,255,255,0.72);
 }
 
 footer {
@@ -141,7 +193,7 @@ nav a:hover {
 }
 
 a {
-    color: black;
+    color: rgba(255,255,255,0.72);
     text-decoration: underline;
 }
 
@@ -189,7 +241,8 @@ a:hover {
         top: 100%;
         left: 0;
         width: 100%;
-        background: white;
+        background: rgba(255,255,255,0.05);
+        backdrop-filter: blur(12px);
         display: none;
         flex-direction: column;
         padding: 10px 20px;
@@ -267,7 +320,7 @@ a:hover {
 }
 
 .subtitle {
-    color: #555;
+    color: rgba(255,255,255,0.72);;
     margin-bottom: 30px;
 }
 
@@ -281,7 +334,7 @@ a:hover {
 
 .service-card {
     width: 250px;
-    background: #f5f5f5;
+    background: #3533cd;
     padding: 15px;
     border-radius: 10px;
 }
@@ -300,7 +353,7 @@ a:hover {
 
 .portfolio-card {
     width: 260px;
-    background: #f5f5f5;
+    background: #3533cd;
     border-radius: 10px;
     padding: 10px;
 }
@@ -319,12 +372,26 @@ a:hover {
     display: inline-block;
     margin: 10px;
     padding: 10px 20px;
-    background: black;
-    color: white;
+    background: white;
+    color: black;
     text-decoration: none;
     border-radius: 6px;
 }
 
 .btn.secondary {
     background: #555;
+}
+
+.contact-section {
+    max-width: 1000px;
+    margin: auto;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+    text-align: center;
+
+    padding: 100px 20px;    
 }
